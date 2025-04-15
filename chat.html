@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindMate | Chat</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fefefe;
+        color: #222;
+      }
+
+      nav {
+        background-color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .logo {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #3b3b98;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+
+      .chat-header {
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .chat-header h1 {
+        font-size: 2.2rem;
+        color: #9b59b6;
+        margin-bottom: 0.5rem;
+      }
+
+      .chat-header p {
+        font-size: 1.1rem;
+      }
+
+      .chat-box {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: #f9f9ff;
+      }
+
+      .bot,
+      .user {
+        background-color: #f4eefc;
+        padding: 0.8rem;
+        margin: 1rem 0;
+        border-radius: 10px;
+        width: fit-content;
+        max-width: 80%;
+      }
+
+      .user {
+        background-color: #d4f4dd;
+        margin-left: auto;
+      }
+
+      .message-input {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .message-input input {
+        padding: 0.8rem 1rem;
+        width: 60%;
+        border-radius: 20px;
+        border: 1px solid #aaa;
+      }
+
+      .message-input button {
+        padding: 0.8rem 1.2rem;
+        border: none;
+        background-color: #c39bd3;
+        color: white;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .note {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #333;
+        margin: 1rem;
+      }
+
+      .bottom-img {
+        margin: 3rem auto 1rem;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .bottom-img img {
+        width: 300px;
+        max-width: 90%;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .footer {
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+        color: #777;
+        background-color: #f2f2f2;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">MindMate💖</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chat.html">Chat</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Chat Header -->
+    <div class="chat-header">
+      <h1>Let's Talk</h1>
+      <p>Your safe space to express how you feel.</p>
+    </div>
+
+    <!-- Chat Box -->
+    <div class="chat-box">
+      <div class="bot">
+        👋 Hi there! I'm MindMate, your friendly support companion. How are you
+        feeling today? You can talk to me about anything.
+      </div>
+      <div class="user">I feel anxious today.</div>
+      <div class="user">Can you help me calm down?</div>
+      <div class="user">I just need someone to talk to.</div>
+      <div class="user">Tell me something positive</div>
+      <div class="bot">I feel really overwhelmed.</div>
+      <div class="bot">
+        I'm really sorry you're feeling this way. Would you like to try a short
+        breathing exercise or journal your thoughts?
+      </div>
+
+      <!-- Message Input -->
+      <div class="message-input">
+        <input type="text" placeholder="How are you feeling today?" />
+        <button>➤</button>
+      </div>
+      <div class="note">
+        All conversations are confidential and stored securely for your mood
+        tracking only.🔒
+      </div>
+    </div>
+
+    <!-- Bottom Image -->
+    <div class="bottom-img">
+      <img src="assets/quote-hand2.jpg" alt="Inspiring Quote Image" />
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        © 2025 MindMate &nbsp;&nbsp;&nbsp; Made with ❤️ by Team Reactor-Jango
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindMate | Resources</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fefefe;
+        color: #222;
+      }
+
+      nav {
+        background-color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .logo {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #3b3b98;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+
+      .hero {
+        background: url("assets/flower-quote2.jpg") no-repeat center
+          center/cover;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-shadow: 1px 1px 2px #000;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+        margin: 0;
+      }
+
+      .hero p {
+        font-size: 1rem;
+        margin: 0.5rem 0 0;
+      }
+
+      section {
+        padding: 2rem;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .write-btn,
+      .breathe-btns button {
+        padding: 0.6rem 1.2rem;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 0.4rem;
+      }
+
+      .write-btn {
+        background-color: #fff;
+        border: 2px solid #68a0cf;
+        color: #68a0cf;
+      }
+
+      .breathe-btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .breathe-btns button:nth-child(1) {
+        background-color: #5dade2;
+        color: white;
+      }
+      .breathe-btns button:nth-child(2) {
+        background-color: #aed6f1;
+        color: #222;
+      }
+      .breathe-btns button:nth-child(3) {
+        background-color: #2e86c1;
+        color: white;
+      }
+      .breathe-btns button:nth-child(4) {
+        background-color: #bb8fce;
+        color: white;
+      }
+
+      .prompt {
+        margin-top: 1rem;
+        background-color: #eef;
+        padding: 0.8rem;
+        border-radius: 8px;
+        font-style: italic;
+      }
+
+      ul.self-care {
+        margin-top: 1rem;
+        padding-left: 1.2rem;
+      }
+
+      ul.self-care li {
+        margin-bottom: 0.4rem;
+      }
+
+      .routine {
+        margin-top: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .routine span {
+        background-color: #d5f5e3;
+        padding: 0.3rem 0.6rem;
+        border-radius: 12px;
+        margin: 0 0.3rem;
+        display: inline-block;
+      }
+
+      .privacy-note {
+        margin-top: 1rem;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+        color: #777;
+        background-color: #f2f2f2;
+        margin-top: 3rem;
+      }
+
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+          gap: 0.8rem;
+          padding-top: 0.5rem;
+        }
+
+        .hero h1 {
+          font-size: 1.5rem;
+        }
+
+        .breathe-btns {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .write-btn {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">MindMate💖</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chat.html">Chat</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section with Image -->
+    <div class="hero">
+      <h1>Your Mind. Your Tools.</h1>
+      <p>
+        Explore simple, science-backed tools to calm your mind and uplift your
+        mood.
+      </p>
+    </div>
+
+    <!-- Journaling Section -->
+    <section>
+      <h2>Start Journaling</h2>
+      <p>
+        Track your thoughts and emotions privately.<br />Journaling helps
+        release stress and notice patterns over time.
+      </p>
+      <button class="write-btn">📝 Write Now</button>
+      <div class="prompt">Today's prompt: What made you smile recently?</div>
+    </section>
+
+    <!-- Breathing Section -->
+    <section>
+      <h2>Try a Breathing Exercise</h2>
+      <p>
+        Feeling overwhelmed?<br />Try a short breathing routine to slow down
+        your thoughts and bring calm.
+      </p>
+      <div class="breathe-btns">
+        <button>Start Breathing</button>
+        <button>🕒 3-Min Calm</button>
+        <button>💨 Deep Breathing</button>
+        <button>🧘‍♀️ Mindful Pause</button>
+      </div>
+    </section>
+
+    <!-- Self-Care Ideas -->
+    <section>
+      <h2>Explore Self-Care Ideas</h2>
+      <p>
+        Build healthy mental habits with small actions — rest, reflect, move, or
+        connect.
+      </p>
+      <ul class="self-care">
+        <li>🎨 Take a creative break</li>
+        <li>🚶 Go for a mindful walk</li>
+        <li>📵 Turn off your phone for 15 minutes</li>
+        <li>🎧 Listen to your favorite music</li>
+        <li>💧 Hydrate & breathe slowly</li>
+      </ul>
+
+      <div class="routine">
+        Want to build a routine?<br />
+        Try our sample:
+        <span>Wake</span>
+        <span>Breathe</span>
+        <span>Journal</span>
+        <span>Reflect</span>
+        <p class="privacy-note">
+          All activities and data stay private. Your wellness is our priority.
+        </p>
+      </div>
+
+      <p>Stay connected with self-care tips & emotional health insights.</p>
+      <p>Coming soon on Android & iOS – MindMate in your pocket.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        © 2025 MindMate &nbsp;&nbsp;&nbsp; Made with ❤️ by Team Reactor-Jango
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindMate - Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background-color: #f5f7fa;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #4a6bff;
+      }
+
+      .nav-buttons {
+        display: flex;
+        gap: 15px;
+      }
+
+      .nav-button {
+        background: none;
+        border: none;
+        color: #555;
+        font-size: 16px;
+        cursor: pointer;
+        transition: color 0.3s;
+      }
+
+      .nav-button:hover {
+        color: #4a6bff;
+      }
+
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 70vh;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .contact-header {
+        margin-bottom: 40px;
+      }
+
+      .contact-header h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #4a6bff;
+      }
+
+      .contact-header p {
+        font-size: 18px;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .contact-form {
+        width: 100%;
+        max-width: 500px;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #555;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border 0.3s;
+      }
+
+      .form-group textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        border-color: #4a6bff;
+        outline: none;
+      }
+
+      .send-button {
+        background-color: #4a6bff;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 100%;
+      }
+
+      .send-button:hover {
+        background-color: #3a5bef;
+      }
+
+      .support-email {
+        margin-bottom: 30px;
+      }
+
+      .support-email a {
+        color: #4a6bff;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+
+      .support-email a:hover {
+        color: #3a5bef;
+        text-decoration: underline;
+      }
+
+      .social-links {
+        margin-bottom: 30px;
+      }
+
+      .social-links p {
+        margin-bottom: 15px;
+        color: #666;
+      }
+
+      .social-icon {
+        color: #4a6bff;
+        font-size: 24px;
+        margin: 0 10px;
+        transition: color 0.3s;
+      }
+
+      .social-icon:hover {
+        color: #3a5bef;
+      }
+
+      .privacy-notice {
+        font-size: 14px;
+        color: #888;
+        max-width: 600px;
+        margin: 0 auto 30px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        color: #888;
+        font-size: 14px;
+      }
+
+      @media (max-width: 768px) {
+        .contact-header h1 {
+          font-size: 28px;
+        }
+
+        .contact-header p {
+          font-size: 16px;
+        }
+
+        .nav-buttons {
+          gap: 10px;
+        }
+
+        .nav-button {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">MindMate💖</div>
+        <div class="nav-buttons">
+          <button class="nav-button">Home</button>
+          <button class="nav-button">Features</button>
+          <button class="nav-button">About</button>
+          <button class="nav-button">Contact</button>
+        </div>
+      </header>
+
+      <div class="contact-container">
+        <div class="contact-header">
+          <h1>We're here to listen.</h1>
+          <p>
+            Have a question, suggestion, or need support? Reach out — we'd love
+            to hear from you.
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="send-button">Send Message</button>
+        </form>
+
+        <div class="support-email">
+          <p>
+            Support Email:
+            <a href="mailto:support@mindmate.ai">support@mindmate.ai</a>
+          </p>
+        </div>
+
+        <div class="social-links">
+          <p>Follow Us</p>
+        </div>
+
+        <p class="privacy-notice">
+          We respect your privacy. Your message will never be shared.
+        </p>
+      </div>
+
+      <footer>
+        <p>© 2025 MindMate</p>
+        <p>Made with by Team Reacter-Jango</p>
+      </footer>
+    </div>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form values
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+
+          // Here you would typically send the data to a server
+          // For this example, we'll just log it and show an alert
+          console.log("Form submitted:", { name, email, message });
+
+          alert("Thank you for your message! We will get back to you soon.");
+
+          // Reset the form
+          this.reset();
+        });
+
+      // Make navigation buttons functional
+      document.querySelectorAll(".nav-button").forEach((button) => {
+        button.addEventListener("click", function () {
+          const buttonText = this.textContent.toLowerCase();
+          alert(`Navigating to ${buttonText} page`);
+          // In a real application, you would navigate to the appropriate page
+          // window.location.href = `${buttonText}.html`;
+        });
+      });
+    </script>
+  </body>
+</html>

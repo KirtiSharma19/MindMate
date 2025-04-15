@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindMate | Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #f8faff;
+        color: #333;
+      }
+
+      .navbar {
+        background-color: #ffffff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .navbar .logo {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #3b3b98;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+
+      .nav-links li a:hover {
+        color: #3b3b98;
+      }
+
+      .container {
+        padding: 2rem;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .subtitle {
+        margin-bottom: 2rem;
+      }
+
+      .image {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        margin: 1rem auto;
+        display: block;
+      }
+
+      .feature-image {
+        max-width: 180px;
+        border-radius: 10px;
+      }
+
+      .btn {
+        padding: 0.6rem 1.2rem;
+        font-weight: 600;
+        text-decoration: none;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0.5rem 0.5rem 1rem 0;
+      }
+
+      .btn-start {
+        background-color: #3b3b98;
+        color: white;
+      }
+
+      .btn-resources {
+        background-color: #c8e6c9;
+        color: #2e7d32;
+      }
+
+      .btn-subscribe {
+        background-color: #ff8a80;
+        color: white;
+      }
+
+      .btn-know {
+        background-color: #90caf9;
+        color: #0d47a1;
+      }
+
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2rem;
+      }
+
+      .feature-tags {
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .feature-tags span {
+        display: inline-block;
+        background-color: #f0f0f0;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        margin: 0.4rem 0.3rem;
+        font-size: 0.9rem;
+      }
+
+      .feature-img {
+        flex: 1;
+        min-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .subscribe-section {
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      .quote {
+        font-size: 1rem;
+        margin: 1rem 0;
+      }
+
+      footer {
+        background-color: #f3f3f3;
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 3rem;
+        color: #555;
+      }
+
+      footer span {
+        color: #e91e63;
+      }
+
+      @media (max-width: 768px) {
+        .features {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .feature-img {
+          margin-top: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">MindMate💙</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chat.html">Chat</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>
+        Your Companion for<br />
+        Mental Wellness 💙
+      </h1>
+      <p class="subtitle">
+        Welcome to MindMate – safe space to reflect, and express.<br />
+        Bring strength to "mind" and peace to "mate".
+      </p>
+
+      <img
+        src="https://www.pexels.com/photo/women-in-white-dress-running-on-green-grass-field-4672438/"
+        alt="Wellness Group"
+        class="image"
+      />
+
+      <!-- Main buttons -->
+      <a href="chat.html" class="btn btn-start">💬 Start Chat</a>
+      <a href="resources.html" class="btn btn-resources">Explore Resources</a>
+
+      <img src="assets/adhd-lightbulb.jpg" alt="ADHD Concept" class="image" />
+
+      <h2>WHY MindMate ?</h2>
+
+      <!-- Features Section -->
+      <div class="features">
+        <div class="feature-tags">
+          <span>🤖 AI Chat Support</span>
+          <span>🌬️ Breathing Exercises</span>
+          <span>📓 Mood Journal</span>
+          <span>📈 Secure Mood History</span>
+          <span>🧠 Track Your Mental Wellness</span>
+        </div>
+        <div class="feature-img">
+          <img
+            src="assets/flower-quote.jpg"
+            alt="Let Go Quote"
+            class="feature-image"
+          />
+        </div>
+      </div>
+
+      <!-- Subscribe and Know More -->
+      <div class="subscribe-section">
+        <p>Stay connected with self-care tips & emotional health insights.</p>
+        <a href="contact.html" class="btn btn-subscribe">Subscribe 📨</a>
+        <a href="contact.html" class="btn btn-know">Know More...</a>
+
+        <img
+          src="assets/quote-hand.jpg"
+          alt="Hand Holding Flower"
+          class="image"
+        />
+        <p class="quote">
+          <i
+            >"You don’t have to go through it alone. MindMate is here for you" –
+            User</i
+          ><br /><br />“Your mind matters. Your emotions are valid.”<br />–
+          User2<br /><br />“You are not alone. You are loved.”<br />– User3
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 MindMate &nbsp; | &nbsp; Made with <span>❤️</span> by Team
+      Reacter Jango
+    </footer>
+  </body>
+</html>

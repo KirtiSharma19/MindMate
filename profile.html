@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindMate – Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f7f7f7;
+        color: #333;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #ffffff;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .logo {
+        font-weight: bold;
+        color: #0d47a1;
+      }
+
+      .logo span {
+        color: #e91e63;
+      }
+
+      .header-right a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #444;
+      }
+
+      .logout-btn {
+        background: #e0f2f1;
+        border: 2px solid #4caf50;
+        padding: 6px 12px;
+        border-radius: 8px;
+        color: #2e7d32;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      .greeting {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .chart-section {
+        background: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        margin-bottom: 20px;
+      }
+
+      #moodChart {
+        max-width: 100%;
+        height: 200px;
+      }
+
+      .reflections {
+        background: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      .reflection {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+      }
+
+      .date-btn {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+
+      .view-history {
+        display: block;
+        margin-top: 10px;
+        text-align: right;
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .actions button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        text-align: left;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .actions button::after {
+        content: "▶";
+        float: right;
+        font-size: 12px;
+      }
+
+      .quote {
+        background: #fce4ec;
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        font-style: italic;
+        font-weight: bold;
+        color: #8e24aa;
+        border-radius: 10px;
+      }
+
+      .footer-note {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+      }
+
+      footer {
+        background: #eeeeee;
+        text-align: center;
+        padding: 10px;
+        font-size: 13px;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <h1 class="logo">MindMate<span>💗</span></h1>
+      </div>
+      <nav class="header-right">
+        <a href="#">Home</a>
+        <a href="#">Chat</a>
+        <a href="#">Resources</a>
+        <a href="#">Profile</a>
+        <a href="#">Contact</a>
+        <button class="logout-btn">Logout</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="greeting">
+        <h2>Hello, Username!</h2>
+        <p>Here's a quick look at your emotional wellness journey</p>
+      </section>
+
+      <section class="chart-section">
+        <h3>Your Mood History</h3>
+        <canvas id="moodChart"></canvas>
+      </section>
+
+      <section class="reflections">
+        <h3>Your Reflections</h3>
+        <div class="reflection">
+          <button class="date-btn">March 20</button>
+          <p>Felt anxious before class, but chatting helped me calm down.</p>
+        </div>
+        <div class="reflection">
+          <button class="date-btn">March 15</button>
+          <p>Felt sad before class, but chatting helped me calm down.</p>
+        </div>
+        <a href="#" class="view-history">View Full History ➤</a>
+      </section>
+
+      <section class="actions">
+        <button>Manage Your Profile</button>
+        <button>Edit Profile (Name, Age, Avatar)</button>
+        <button>Set Daily Reminders</button>
+        <button>Privacy Settings</button>
+        <button>Change Theme</button>
+      </section>
+
+      <section class="quote">
+        <p>Growth is not linear, and that’s okay.</p>
+      </section>
+
+      <section class="footer-note">
+        <p>
+          Your data is stored securely. Only you can access your emotional
+          history.
+        </p>
+        <p>Stay connected with self-care tips & emotional health insights.</p>
+        <p><em>Coming soon on Android & iOS – MindMate in your pocket.</em></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 MindMate</p>
+      <p>Made with ❤️ by Team Reactor-Jango</p>
+    </footer>
+
+    <script>
+      const ctx = document.getElementById("moodChart").getContext("2d");
+
+      const moodChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: ["Happy", "Sad", "Anxious", "Calm"],
+          datasets: [
+            {
+              label: "Mood Score",
+              data: [8, 3, 4, 6],
+              backgroundColor: "rgba(100, 149, 237, 0.2)",
+              borderColor: "#3b3b98",
+              borderWidth: 2,
+              tension: 0.4,
+              fill: true,
+              pointBackgroundColor: "#3b3b98",
+              pointRadius: 4,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              suggestedMax: 10,
+              grid: {
+                display: false,
+              },
+            },
+            x: {
+              grid: {
+                display: false,
+              },
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
